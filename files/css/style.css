@@ -1,0 +1,61 @@
+@import url(base.css);
+
+/*-------------------------------------------------------------------------
+	Main
+/*-----------------------------------------------------------------------*/
+#all {
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.wrap {
+	width: 100%;
+	max-width: 98vw;
+	margin: 0 auto;
+}
+
+.section:not(:last-child) {
+	margin-bottom: 60px;
+}
+
+h1 {
+	margin-bottom: 30px;
+	font-size: 24px;
+}
+
+h2 {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.movie {
+	display: inline-block;
+	width: 100%;
+	max-width: 300px;
+	margin: 0 10px 30px;
+}
+
+.text {
+	font-size: 16px;
+	text-align: center;
+}
+
+/*-------------------------------------------------------------------------
+	Video
+/*-----------------------------------------------------------------------*/
+[data-movie] {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	background-color: #000;
+}
+
+	[data-movie] iframe {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
